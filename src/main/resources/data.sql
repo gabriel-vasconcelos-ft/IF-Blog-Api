@@ -1,0 +1,2 @@
+-- pass: qwe12345
+INSERT INTO autor (id, admin, email, matricula, nome, senha) VALUES (1, true, 'admin@ifce.edu.br', '00001', 'Admin', '$2a$10$0lC8pudUB.zWK7CF581gee4tVSPyn8IoRp8lN9cWRK6bNzym3/sxG') ON CONFLICT DO NOTHING;

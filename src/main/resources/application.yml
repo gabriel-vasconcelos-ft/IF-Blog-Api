@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blog?useTimezone=true&serverTimezone=UTC&uselegacyDate
+    username: postgres
+    password: Crede17m
+  jpa: 
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate: 
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+  sql:
+    init:
+      mode: always
+      
+logging:
+   level:   
+     org:
+       hibernate:
+         type: trace
+        
+
+      
+
